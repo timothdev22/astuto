@@ -13,7 +13,7 @@ services:
       target: dev
     environment:
       <<: *db-env
-      BASE_URL: http://feedbacks.mirano.app:3000
+      BASE_URL: https://feedbacks.mirano.app:3000
       SECRET_KEY_BASE: secretkeybasehere
     ports:
       - "3000:3000"
