@@ -9,7 +9,8 @@ Rails.application.configure do
     config.hosts << ENV["RAILS_ALLOWED_HOST"]
   else
     config.hosts << "feedbacks.mirano.app"
-
+  end
+  
   # 0 if using localhost, 1 if using lvh.me
   config.action_dispatch.tld_length = 0
 
