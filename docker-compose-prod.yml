@@ -4,3 +4,10 @@ services:
       context: .
       dockerfile: Dockerfile
       target: prod
+    environment:
+      RAILS_ENV: production
+      RAILS_ALLOWED_HOST: feedbacks.mirano.app
+      BASE_URL: "https://feedbacks.mirano.app"
+      SECRET_KEY_BASE: secretkeybasehere
+    ports:
+      - "3000:3000"
